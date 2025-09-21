@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A real-time polling system with Teacher and Student personas",
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "node backend/index.js",
     "install:backend": "cd backend && npm install",
     "install:frontend": "cd frontend && npm install", 
     "install:all": "npm run install:backend && npm run install:frontend",

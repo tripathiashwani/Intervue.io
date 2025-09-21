@@ -4,7 +4,10 @@ class SocketService {
   private socket: Socket | null = null;
 
   connect() {
-    const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000';
+    // For Vercel deployment, use relative URL in production
+    const serverUrl = process.env.NODE_ENV === 'production' 
+      ? window.location.origin 
+      : (process.env.REACT_APP_SERVER_URL || 'http://localhost:5000');
     this.socket = io(serverUrl);
     return this.socket;
   }
