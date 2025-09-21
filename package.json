@@ -1,0 +1,30 @@
+{
+  "name": "live-polling-system",
+  "version": "1.0.0",
+  "description": "A real-time polling system with Teacher and Student personas",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install", 
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "polling", 
+    "real-time", 
+    "socket.io", 
+    "react", 
+    "express", 
+    "education",
+    "interactive"
+  ],
+  "author": "Ashwani Tripathi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tripathiashwani/Intervue.io.git"
+  }
+}
